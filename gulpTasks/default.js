@@ -5,6 +5,7 @@ gulp.task('default', () => {
   run(
       'clean',
       ['copy:fonts', 'copy:html', 'copy:img', 'style',  'images'],
+      'symbols',
       'scripts',
       'server',
       'watch'
