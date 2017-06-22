@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Образцов Иван</title>
+    <title>O/I</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&amp;subset=cyrillic" rel="stylesheet">
@@ -10,92 +10,53 @@
   </head>
   <body>
     <svg style="display: none;" xmlns="http://www.w3.org/2000/svg"><symbol id="facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol><symbol id="github" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></symbol><symbol id="mail" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" fill="none" stroke-width="2"/><path d="M22 6l-10 7L2 6" fill="none" stroke-linecap="round" stroke-width="2"/></symbol><symbol id="twitter" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></symbol></svg>
-    <div class="container">
-      <div class="wrapper">
-        <section class="panel  panel--main">
-          <div class="panel__content">
-            <h1>Образцов Иван</h1>
-            <p>HTML-верстальщик / junior frontend-разработчик</p>
-            <ul class="social">
-              <li>
-                <a class="social__link  social__link--fb" href="#">Facebook
-                <svg class="social__icon  social__icon--fb"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use></svg>
-                </a>
-              </li>
-              <li>
-                <a class="social__link  social__link--tw" href="#">Twitter
-                <svg class="social__icon  social__icon--tw"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use></svg>
-                </a>
-              </li>
-              <li>
-                <a class="social__link  social__link--gh" href="#">Github
-                <svg class="social__icon  social__icon--gh"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#github"></use></svg>
-                </a>
-              </li>
-              <li>
-                <a class="social__link  social__link--mail" href="#">Email
-                <svg class="social__icon  social__icon--mail"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mail"></use></svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="panel__img">
-            <img src="img/code-1@1x.jpg" alt="">
-          </div>
-        </section>
+      <h1>Образцов Иван <span>резюме: <a href="#">pdf</a></span></h1>
+      <p>работаю HTML-верстальщиком в <a href="https://leadonance.com/">leadonance</a>, живу в г. Тверь</p>
+      <h2>Работы:</h2>
+      <ul class="projects">
+        <li>
+          <a href="#">Nerds</a> - веб-студия,
+          <span>Фиксированная вёрстка, JavaScript</span>
+        </li>
+        <li>
+          <a href="#">Mishka</a> - интернет-магазин,
+          <span>Адаптивная вёрстка, jQuery, Retina, SVG, Gulp</span></li>
+        <li>
+          <a href="#">Pink</a> - промосайт мобильного приложения,
+          <span>Адаптивная вёрстка, Retina, SVG, Grunt</span></li>
+        <li>
+          <a href="#">Code & Magick</a> - игра,
+          <span>JavaScript, canvas, jsonp, ajax, localStorage, cookies</span>
+        </li>
+        <li>
+          <a href="#">Brain Games</a> - небольшая консольная игра
+          <span>JavaScript, ES6, Babel</span>
+        </li>
+        <li>etc.</li>
+      </ul>
 
-        <section class="panel  panel--about">
-          <div class="panel__content  panel__content--about">
-            <h2>Немного обо мне:</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat pariatur porro est dolores, eveniet laborum laboriosam quibusdam. Saepe recusandae voluptate veritatis reprehenderit amet quos debitis itaque, nemo, iusto at esse.</p>
-          </div>
-        </section>
-
-        <section class="panel  panel--skills">
-          <div class="panel__content  panel__content--skills">
-            <h2>Навыки</h2>
-            <p>Использую БЭМ для именования классов, SCSS, SVG-графику - мелкую собираю в спрайт, делаю ретинизацию. Авотоматизирую Gulp-ом. Верстать могу адаптивно или фиксированно.</p>
-          </div>
-          <div class="panel__skills">
-            <ul class="skills">
-              <li class="skills__item">HTML
-                <div class="chart">85%</div>
-              </li>
-              <li class="skills__item">CSS
-                <div class="chart">70%</div>
-              </li>
-              <li class="skills__item">JS
-                <div class="chart">30%</div>
-              </li>
-              <li class="skills__item">SVG
-                <div class="chart">20%</div>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="panel">
-          <div class="panel__content  panel__content--projects">
-            <h2>Проекты</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum rem mollitia.</p>
-          </div>
-          <div class="panel__gallery">
-            <div class="panel__project">
-              <a href="#"><img src="img/mishka.png" alt=""></a>
-            </div>
-            <div class="panel__project">
-              <a href="#"><img src="img/mishka.png" alt=""></a>
-            </div>
-            <div class="panel__project  panel__project--full">
-              <a href="#"><img src="img/mishka.png" alt=""></a>
-            </div>
-            <div class="panel__project  panel__project--full">
-              <a href="#"><img src="img/mishka.png" alt=""></a>
-            </div>
-          </div>
-        </section>
-      </div>
-    </div>
+      <ul class="social">
+        <li>
+          <a class="social__link  social__link--fb" href="#">Facebook
+          <svg class="social__icon  social__icon--fb"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use></svg>
+          </a>
+        </li>
+        <li>
+          <a class="social__link  social__link--tw" href="#">Twitter
+          <svg class="social__icon  social__icon--tw"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use></svg>
+          </a>
+        </li>
+        <li>
+          <a class="social__link  social__link--gh" href="#">Github
+          <svg class="social__icon  social__icon--gh"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#github"></use></svg>
+          </a>
+        </li>
+        <li>
+          <a class="social__link  social__link--mail" href="#">Email
+          <svg class="social__icon  social__icon--mail"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mail"></use></svg>
+          </a>
+        </li>
+      </ul>
+    <script src="js/index.js"></script>
   </body>
-  <script src="js/index.js"></script>
 </html>
