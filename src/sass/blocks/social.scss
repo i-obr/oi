@@ -2,13 +2,7 @@
 	padding: 0;
 	list-style: none;
 	display: flex;
-	justify-content: flex-start;
 	align-items: center;
-
-	li {
-		font-size: 0;
-		margin-right: 10px;
-	}
 
 	&__link {
 		display: inline-block;
@@ -16,30 +10,5 @@
 		padding: 7px;
 		background: white;
 		border-radius: 50%;
-		border: 1px solid gray;
-		fill: #d3d3d3;
-
-		&:hover {
-			border-color: #3399ff;
-		}
-
-		&--tw,
-		&--gh,
-		&--mail {
-			stroke: #d3d3d3;
-
-			&:hover {
-				stroke: #3399ff;
-			}
-		}
-
-		&:hover {
-			fill: #3399ff;
-		}
-	}
-
-	&__icon {
-		width: 16px;
-		height: 16px;
 	}
 }

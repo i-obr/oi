@@ -1,0 +1,10 @@
+.company {
+	&--lead {
+		text-decoration: line-through;
+		color: #333333;
+
+		&:hover {
+			color: #3399ff;
+		}
+	}
+}
