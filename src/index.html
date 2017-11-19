@@ -5,68 +5,352 @@
     <title>O/I</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alice&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <div class="content">
-      <h1>Образцов Иван <span>резюме: <a target="_blank" href="img/CV.pdf">pdf</a></span></h1>
-      <p>Мне 26 лет, работаю HTML-верстальщиком в <a class="company  company--lead" href="https://leadonance.com/">leadonance</a> &#8594 <a class="company  company--wikium" href="https://wikium.ru/">Викиум</a>, живу в Москве</p>
-      <hr>
-      <h2>Работы:</h2>
-      <ul class="projects">
-        <li>
-          <a href="https://i-obr.github.io/nerds/index.html">Nerds</a> - веб-студия,
-          <span>Фиксированная вёрстка, JavaScript;</span>
-          <span>Исходники: <a href="https://github.com/i-obr/nerds">nerds</a></span>
-        </li>
-        <li>
-          <a href="https://i-obr.github.io/33612-mishka/index.html">Mishka</a> - интернет-магазин,
-          <span>Адаптивная вёрстка, jQuery, Retina, SVG, Gulp, Scss;</span>
-          <span>Исходники: <a href="https://github.com/i-obr/33612-mishka">mishka</a></span>
-        </li>
-        <li>
-          <a href="https://i-obr.github.io/pink/">Pink</a> - промо мобильного приложения,
-          <span>Адаптивная вёрстка, Retina, SVG, Grunt, Less;</span>
-          <span>Исходники: <a href="https://github.com/i-obr/pink">pink</a></span>
-        </li>
-        <li>
-          <a href="http://i-obr.github.io/33612-code-and-magick/">Code &amp;&nbsp;Magick</a> - промо игры,
-          <span>JavaScript, canvas, jsonp, ajax, localStorage, cookies;</span>
-          <span>Исходники: <a href="https://github.com/i-obr/33612-code-and-magick">code &amp;&nbsp;magick</a></span>
-        </li>
-        <li>
-          <a href="https://www.npmjs.com/package/brain-games-i_o">Brain Games</a> - небольшая консольная игра
-          <span>JavaScript, ES6, Babel;</span>
-          <span>Исходники: <a href="https://github.com/i-obr/Brain-Games">brain games</a></span>
-        </li>
-        <li>
-          <a href="https://i-obr.github.io/mobile-menu/index.html">Mobile Menu</a> - пример меню для мобильных устройств
-          <span>JavaScript, Pointer Events;</span>
-          <span>Исходники: <a href="https://github.com/i-obr/mobile-menu">mobile menu</a></span>
-        </li>
-        <li>Вычислитель отличий (в процессе)</li>
-      </ul>
-      <hr>
+    <div class="container">
+      <header class="page-header">
+        <h1>Резюме</h1>
+        <a class="page-header__pdf" href="img/CV.pdf">Скачать pdf</a>
+      </header>
+      <section class="person">
+        <h2>Про меня</h2>
+        <table>
+          <tr>
+            <td>Имя:</td>
+            <td>Образцов Иван</td>
+          </tr>
+          <tr>
+            <td>Дата рождения:</td>
+            <td>09 октября 1991 года</td>
+          </tr>
+          <tr>
+            <td>Город:</td>
+            <td>Москва</td>
+          </tr>
+          <tr>
+            <td>Язык:</td>
+            <td>Русский</td>
+          </tr>
+        </table>
+      </section>
+      <section class="contacts">
+        <h2>Контакты</h2>
+        <table>
+          <tr>
+            <td>Email:</td>
+            <td>
+              <a href="mailto:obr.iv@ya.ru">obr.iv@ya.ru</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Skype:</td>
+            <td>
+              <a href="skype:obr-iv?call">obr-iv</a>
+            </td>
+          </tr>
+          <tr>
+            <td>GitHub:</td>
+            <td>
+              <a href="https://github.com/i-obr">https://github.com/i-obr</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Facebook:</td>
+            <td>
+              <a href="https://www.facebook.com/iv.obrr">https://www.facebook.com/iv.obrr</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Телефон:</td>
+            <td>
+              <a href="tel:89776991416">8&nbsp;977 699-14-16</a>
+            </td>
+          </tr>
+        </table>
+      </section>
+      <section class="skills">
+        <h2>Навыки</h2>
+        <table>
+          <tr>
+            <th>Разметка</th>
+            <th>Стили</th>
+            <th>Скрипты</th>
+            <th>Автоматизация</th>
+            <th>Дополнительно</th>
+          </tr>
+          <tr>
+            <td>
+              HTML
+              <svg class="line  line-max" width="100" height="10" viewBox="0 0 180 4" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 4V0h222v4z" fill="#86C634" fill-rule="evenodd" fill-opacity=".2"/>
+                <rect x="0" y="-3" width="140" height="10" />
+              </svg>
+            </td>
+            <td>
+              CSS
+              <svg class="line  line-max" width="100" height="10" viewBox="0 0 180 4" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 4V0h222v4z" fill="#86C634" fill-rule="evenodd" fill-opacity=".2"/>
+                <rect x="0" y="-3" width="140" height="10" />
+              </svg>
+            </td>
+            <td>
+              JavaScript
+              <svg class="line  line-min" width="100" height="10" viewBox="0 0 180 4" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 4V0h222v4z" fill="#86C634" fill-rule="evenodd" fill-opacity=".2"/>
+                <rect x="0" y="-3" width="45" height="10" />
+              </svg>
+            </td>
+            <td>
+              Gulp
+              <svg class="line  line-max" width="100" height="10" viewBox="0 0 180 4" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 4V0h222v4z" fill="#86C634" fill-rule="evenodd" fill-opacity=".2"/>
+                <rect x="0" y="-3" width="120" height="10" />
+              </svg>
+            </td>
+            <td>
+              git
+              <svg class="line  line-min" width="100" height="10" viewBox="0 0 180 4" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 4V0h222v4z" fill="#86C634" fill-rule="evenodd" fill-opacity=".2"/>
+                <rect x="0" y="-3" width="50" height="10" />
+              </svg>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Pug
+              <svg class="line  line-middle" width="100" height="10" viewBox="0 0 180 4" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 4V0h222v4z" fill="#86C634" fill-rule="evenodd" fill-opacity=".2"/>
+                <rect x="0" y="-3" width="110" height="10" />
+              </svg>
+            </td>
+            <td>
+              SCSS
+              <svg class="line  line-max" width="100" height="10" viewBox="0 0 180 4" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 4V0h222v4z" fill="#86C634" fill-rule="evenodd" fill-opacity=".2"/>
+                <rect x="0" y="-3" width="130" height="10" />
+              </svg>
+            </td>
+            <td>
+              ES6
+              <svg class="line  line-min" width="100" height="10" viewBox="0 0 180 4" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 4V0h222v4z" fill="#86C634" fill-rule="evenodd" fill-opacity=".2"/>
+                <rect x="0" y="-3" width="40" height="10" />
+              </svg>
+            </td>
+            <td>
+              Grunt
+              <svg class="line  line-middle" width="100" height="10" viewBox="0 0 180 4" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 4V0h222v4z" fill="#86C634" fill-rule="evenodd" fill-opacity=".2"/>
+                <rect x="0" y="-3" width="90" height="10" />
+              </svg>
+            </td>
+            <td>
+              Sketch
+              <svg class="line  line-middle" width="100" height="10" viewBox="0 0 180 4" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 4V0h222v4z" fill="#86C634" fill-rule="evenodd" fill-opacity=".2"/>
+                <rect x="0" y="-3" width="73" height="10" />
+              </svg>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Nunjucks
+              <svg class="line  line-middle" width="100" height="10" viewBox="0 0 180 4" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 4V0h222v4z" fill="#86C634" fill-rule="evenodd" fill-opacity=".2"/>
+                <rect x="0" y="-3" width="110" height="10" />
+              </svg>
+            </td>
+            <td>
+              Less
+              <svg class="line  line-middle" width="100" height="10" viewBox="0 0 180 4" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 4V0h222v4z" fill="#86C634" fill-rule="evenodd" fill-opacity=".2"/>
+                <rect x="0" y="-3" width="110" height="10" />
+              </svg>
+            </td>
+            <td>
+              JQuery
+              <svg class="line  line-middle" width="100" height="10" viewBox="0 0 180 4" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 4V0h222v4z" fill="#86C634" fill-rule="evenodd" fill-opacity=".2"/>
+                <rect x="0" y="-3" width="80" height="10" />
+              </svg>
+            </td>
+            <td class="unprogress">
+              Webpack
+              <svg class="line  line-none" width="100" height="10" viewBox="0 0 180 4" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 4V0h222v4z" fill="#86C634" fill-rule="evenodd" fill-opacity=".2"/>
+                <rect x="0" y="-3" width="0" height="10" />
+              </svg>
+            </td>
+            <td>
+              Illustrator
+              <svg class="line  line-middle" width="100" height="10" viewBox="0 0 180 4" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 4V0h222v4z" fill="#86C634" fill-rule="evenodd" fill-opacity=".2"/>
+                <rect x="0" y="-3" width="65" height="10" />
+              </svg>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              PostCSS
+              <svg class="line  line-max" width="100" height="10" viewBox="0 0 180 4" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 4V0h222v4z" fill="#86C634" fill-rule="evenodd" fill-opacity=".2"/>
+                <rect x="0" y="-3" width="130" height="10" />
+              </svg>
+            </td>
+            <td class="unprogress">
+              React.js
+              <svg class="line  line-none" width="100" height="10" viewBox="0 0 180 4" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 4V0h222v4z" fill="#86C634" fill-rule="evenodd" fill-opacity=".2"/>
+                <rect x="0" y="-3" width="0" height="10" />
+              </svg>
+            </td>
+            <td></td>
+            <td>
+              Photoshop
+              <svg class="line  line-max" width="100" height="10" viewBox="0 0 180 4" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 4V0h222v4z" fill="#86C634" fill-rule="evenodd" fill-opacity=".2"/>
+                <rect x="0" y="-3" width="130" height="10" />
+              </svg>
+            </td>
+          </tr>
+        </table>
+      </section>
+      <section class="experience">
+        <h2>Опыт</h2>
+        <table>
+          <tr>
+            <td>2017:</td>
+            <td>Работа в компании <a href="https://wikium.ru/">Викиум</a> в качестве HTML-верстальщика, редизайн некоторых страниц, тренажёров.</td>
+          </tr>
+          <tr>
+            <td>2016-2017:</td>
+            <td>Работа в компании <a href="https://leadonance.com/">Leadonance</a> в качестве HTML-верстальщика, вёрстка email-писем, лэндингов и интеграция с платформой <a href="https://www.marketo.com/">marketo</a></td>
+          </tr>
+        </table>
+      </section>
+      <section class="education">
+        <h2>Образование</h2>
+        <table>
+          <tr>
+            <td>2017:</td>
+            <td>Курсы по программированию <a href="https://ru.hexlet.io/u/o_i">Hexlet</a></td>
+          </tr>
+          <tr>
+            <td>2016:</td>
+            <td>Базовый интенсив по JavaScript</td>
+          </tr>
+          <tr>
+            <td>2016:</td>
+            <td>Продвинутый интенсив по HTML и CSS</td>
+          </tr>
+          <tr>
+            <td>2015:</td>
+            <td>Базовый интенсив по HTML и CSS</td>
+          </tr>
+          <tr>
+            <td>2008-2013:</td>
+            <td>Ивановский институт ГПС МЧС России; специальность: инженер пожарной безопасности.</td>
+          </tr>
+        </table>
+      </section>
+      <section class="projects">
+        <h2>Примеры работ</h2>
+        <table>
+          <tr>
+            <td>
+              Mishka:
+            </td>
+            <td>
+              интернет-магазин, <span class="keyword">aдаптивная вёрстка</span>, <span class="keyword">jQuery</span>, <span class="keyword">Retina</span>, <span class="keyword">SVG</span>, <span class="keyword">Gulp</span>, <span class="keyword">Scss</span>;
+              <ul>
+                <li>
+                  <a href="https://github.com/i-obr/33612-mishka">Репозиторий</a>
+                </li>
+                <li>
+                  <a href="https://i-obr.github.io/33612-mishka/index.html">Посмотреть</a>
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Pink:
+            </td>
+            <td>
+              промо мобильного приложения, <span class="keyword">aдаптивная вёрстка</span>, <span class="keyword">Retina</span>, <span class="keyword">SVG</span>, <span class="keyword">Grunt</span>, <span class="keyword">Less</span>;
+              <ul>
+                <li>
+                  <a href="https://github.com/i-obr/pink">Репозиторий</a>
+                </li>
+                <li>
+                  <a href="https://i-obr.github.io/pink/">Посмотреть</a>
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Code &amp;&nbsp;Magick:
+            </td>
+            <td>
+              промо игры, <span class="keyword">JavaScript</span>, <span class="keyword">canvas</span>, <span class="keyword">jsonp</span>, <span class="keyword">ajax</span>, <span class="keyword">localStorage</span>, <span class="keyword">cookies</span>;
+              <ul>
+                <li>
+                  <a href="https://github.com/i-obr/33612-code-and-magick">Репозиторий</a>
+                </li>
+                <li>
+                  <a href="http://i-obr.github.io/33612-code-and-magick/">Посмотреть</a>
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Brain Games:
+            </td>
+            <td>
+              консольная игра, <span class="keyword">JavaScript</span>, <span class="keyword">ES6</span>, <span class="keyword">Babel</span>;
+              <ul>
+                <li>
+                  <a href="https://github.com/i-obr/Brain-Games">Репозиторий</a>
+                </li>
+                <li>
+                  <a href="https://www.npmjs.com/package/brain-games-i_o">Установить</a>
+                </li>
+              </ul>
+            </td>
+          </tr>
 
-      <h2>Контакты:</h2>
-      <ul class="social">
-        <li>
-          <a class="social__link  social__link--fb" href="tel:89776991416">8&nbsp;977 699-14-16</a>
-        </li>
-        <li>
-          <a class="social__link  social__link--fb" href="https://www.facebook.com/iv.obrr">FB</a>
-        </li>
-        <li>
-          <a class="social__link  social__link--tw" href="https://twitter.com/IObraztcov">Twitter</a>
-        </li>
-        <li>
-          <a class="social__link  social__link--gh" href="https://github.com/i-obr">Github</a>
-        </li>
-        <li>
-          <a class="social__link  social__link--mail" href="mailto:obr.iv@ya.ru">Email</a>
-        </li>
-      </ul>
+          <tr>
+            <td>
+              Mobile Menu:
+            </td>
+            <td>
+              пример меню для мобильных устройств <span class="keyword">JavaScript</span>, <span class="keyword">Pointer Events</span>;
+              <ul>
+                <li>
+                  <a href="https://github.com/i-obr/mobile-menu">Репозиторий</a>
+                </li>
+                <li>
+                  <a href="https://i-obr.github.io/mobile-menu/index.html">Посмотреть</a>
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Вычислитель отличий:
+            </td>
+            <td>
+              В процессе...
+            </td>
+          </tr>
+        </table>
+      </section>
+      <p class="copy">copyright&copy; 2017 :)</p>
     </div>
     <script src="js/index.js"></script>
   </body>
